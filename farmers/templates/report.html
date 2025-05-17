@@ -1,0 +1,18 @@
+<!-- report_template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Farm Report</title>
+</head>
+<body>
+    <h1>Farm Sustainability Report</h1>
+    <p><strong>Farmer:</strong> {{ user.username }}</p>
+    <p><strong>Farm:</strong> {{ profile.farm_name }}</p>
+    <p>Carbon Footprint: {{ carbon }} kg CO₂</p>
+    <p>Water Usage: {{ water }} m³</p>
+    <p>Land Risk: {{ land_degradation }}</p>
+    <p>Sustainability Score: {{ score }}</p>
+</body>
+</html>
+

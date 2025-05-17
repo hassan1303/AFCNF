@@ -1,0 +1,11 @@
+<!-- input_livestock_data.html -->
+{% extends 'calculator/base.html' %}
+{% block title %}Livestock Data{% endblock %}
+{% block content %}
+<h2>Enter Livestock Data</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

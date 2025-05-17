@@ -1,0 +1,11 @@
+<!-- input_machinery_data.html -->
+{% extends 'calculator/base.html' %}
+{% block title %}Machinery Usage{% endblock %}
+{% block content %}
+<h2>Enter Machinery Data</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+{% endblock %}
