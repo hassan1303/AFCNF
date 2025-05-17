@@ -1,9 +1,13 @@
-<!-- export_success.html -->
 {% extends 'farmers/base.html' %}
 {% block title %}Export Success{% endblock %}
 {% block content %}
-<h2>Report Exported Successfully</h2>
-<p>You can now download your report in PDF or Excel format.</p>
-<a href="{{ pdf_url }}">Download PDF</a> | <a href="{{ excel_url }}">Download Excel</a>
+<section>
+    <h2>Report Exported Successfully</h2>
+    <p>Your report is ready for download in the following formats:</p>
+    <ul>
+        <li><a href="{{ pdf_url }}" download>Download PDF</a></li>
+        <li><a href="{{ excel_url }}" download>Download Excel</a></li>
+    </ul>
+</section>
 {% endblock %}
 

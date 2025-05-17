@@ -1,35 +1,42 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Agri Footprint{% endblock %}</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <header>
         <h1>Agricultural Footprint Calculator</h1>
+        <p>Your tool for tracking environmental impact in farming</p>
         <nav>
-            <a href="/login.html">login</a>
-            <a href="/dashboard.html">Dashboard</a>
-            <a href="/profile.html">Profile</a>
-            <a href="/register.html">Register</a>
-            <a href="/crop_data.html">Input_Crop_data</a>
-            <a href="/water_data.html">Input_water_data</a>
-            <a href="/livestock.html">Input_livestock_data</a>
-            <a href="/machinery_data.html">input_machinery_data</a>
-            <a href="/report.html">Report_data</a>
-            <a href="/export.html">Export_data</a>
-            <a href="/logout">Logout</a>
+            <ul>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'input_crop_data' %}">Input Crop Data</a></li>
+                <li><a href="{% url 'input_water_data' %}">Input Water Data</a></li>
+                <li><a href="{% url 'input_livestock_data' %}">Input Livestock Data</a></li>
+                <li><a href="{% url 'input_machinery_data' %}">Input Machinery Data</a></li>
+                <li><a href="{% url 'sustainability_report' %}">Report Data</a></li>
+                <li><a href="{% url 'export_data' %}">Export Data</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
         </nav>
+        <hr>
     </header>
 
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}
+        <p>Welcome to AgriCalc. Use the menu above to get started.</p>
+        {% endblock %}
     </main>
 
     <footer>
+        <hr>
         <p>&copy; 2025 AgriCalc. All rights reserved.</p>
     </footer>
 </body>

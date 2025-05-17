@@ -1,4 +1,3 @@
-<!-- report_template.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +6,7 @@
 </head>
 <body>
     <h1>Farm Sustainability Report</h1>
+    <p><strong>Date:</strong> {{ current_date }}</p>
     <p><strong>Farmer:</strong> {{ user.username }}</p>
     <p><strong>Farm:</strong> {{ profile.farm_name }}</p>
     <p>Carbon Footprint: {{ carbon }} kg CO₂</p>

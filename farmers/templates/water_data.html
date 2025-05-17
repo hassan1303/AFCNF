@@ -1,12 +1,12 @@
-<!-- input_water_data.html -->
-{% extends 'calculator/base.html' %}
+{% extends 'farmers/base.html' %}
 {% block title %}Water Usage{% endblock %}
 {% block content %}
 <h2>Enter Water Usage</h2>
+<p>Please fill in the water usage details accurately to calculate your farm’s footprint.</p>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Save</button>
+    <a href="{% url 'dashboard' %}">Back to Dashboard</a>
 </form>
-{% endblock %}
 
