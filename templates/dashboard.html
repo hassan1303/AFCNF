@@ -1,0 +1,12 @@
+<!-- dashboard.html -->
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2>Welcome, {{ user.username }}</h2>
+<div class="dashboard-cards">
+    <div class="card">Carbon Emission: {{ carbon }} kg CO₂</div>
+    <div class="card">Water Usage: {{ water }} m³</div>
+    <div class="card">Sustainability Score: {{ score }}</div>
+</div>
+{% endblock %}
+

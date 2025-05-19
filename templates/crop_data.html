@@ -1,0 +1,16 @@
+<!-- input_crop_data.html -->
+{% extends 'base.html' %}
+
+{% block title %}Crop Data{% endblock %}
+
+{% block content %}
+<section>
+    <h2>Enter Crop Data</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+</section>
+{% endblock %}
+

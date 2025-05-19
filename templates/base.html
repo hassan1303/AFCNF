@@ -1,0 +1,218 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Agricultural Footprint Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar_barfiller.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated-headline.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/loder.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <!-- Logo -->
+                <div class="header-left">
+                    <div class="logo">
+                        <!-- <a href="{% url 'home'%}"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a> -->
+                         <a href="{% url 'home' %}" style="font-size: 2rem; font-weight: bold; color: #2d572c; text-decoration: none;">AFCNF</a>
+                    </div>
+                    <div class="menu-wrapper  d-flex align-items-center">
+                        <!-- Main-menu -->
+                        <div class="main-menu d-none d-lg-block">
+                            <nav> 
+                                <ul id="navigation">                                                                                          
+                                    <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="{% url 'home' %}">Dashboard</a></li>
+                                    <li><a href="{% url 'home' %}">Data Input</a>
+                                        <ul class="submenu">
+                                            <li><a href="{% url 'home' %}">Crop Data</a></li>
+                                            <li><a href="{% url 'home' %}">Water Data</a></li>
+                                            <li><a href="{% url 'home' %}">Livestock Data</a></li>
+                                            <li><a href="{% url 'home' %}">Machinery Data</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'home' %}">Reports</a></li>
+                                    <ul class="submenu">
+                                        <li><a href="{% url 'home' %}">Sustainability Report</a></li>
+                                        <li><a href="{% url 'home' %}">Export Data</a></li>
+                                    </ul>
+                                    <li><a href="{% url 'home' %}">Profile</a></li>
+                                    <li><a href="{% url 'logout' %}">Logout</a></li>
+
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div> 
+        
+                <!-- Mobile Menu -->
+                <div class="col-12">
+                    <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+{% block content %}
+{% endblock content%}
+
+<footer>
+    <!-- Footer Start -->
+    <div class="footer-area footer-padding">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- About/Project Info -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-footer-caption mb-50">
+                        <div class="footer-logo mb-35">
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'assets/img/logo/loder.png' %}" style="width: 100px; height: 100px;" alt="Project Logo">AFCNF
+                            </a>
+                        </div>
+                        <div class="footer-tittle">
+                            <p>Agricultural Footprint Calculator helps Nigerian farmers track and reduce their environmental impact through data-driven insights.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-footer-caption mb-50">
+                        <div class="footer-tittle">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li><a href="#">(+234) 813 040 2510</a></li>
+                                <li><a href="#">support@agri-footprint.ng</a></li>
+                                <li><a href="#">Gwarzo Road, Opp. BUK New Campus, Kano, Nigeria</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Optional Social Links -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-footer-caption mb-50">
+                        <div class="footer-tittle">
+                            <h4>Follow Us</h4>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom-area section-bg2" data-background="{% static 'assets/img/gallery/footer-bg.png' %}">
+        <div class="container">
+            <div class="footer-border">
+                <div class="row align-items-center">
+                    <div class="col-xl-12">
+                        <div class="footer-copy-right text-center">
+                            <p>&copy; <script>document.write(new Date().getFullYear());</script> Agricultural Footprint Calculator. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- Footer End -->
+</footer>
+
+<!-- Scroll Up -->
+<div id="back-top" >
+<a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+
+<script src="{% static './assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="{% static './assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static './assets/js/popper.min.js' %}"></script>
+<script src="{% static './assets/js/bootstrap.min.js' %}"></script>
+<!-- Jquery Mobile Menu -->
+<script src="{% static './assets/js/jquery.slicknav.min.js' %}"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="{% static './assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static './assets/js/slick.min.js' %}"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="{% static './assets/js/wow.min.js' %}"></script>
+<script src="{% static './assets/js/animated.headline.js' %}"></script>
+<script src="{% static './assets/js/jquery.magnific-popup.js' %}"></script>
+
+<!-- Date Picker -->
+<script src="{% static './assets/js/gijgo.min.js' %}"></script>
+<!-- Nice-select, sticky -->
+<script src="{% static './assets/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static './assets/js/jquery.sticky.js' %}"></script>
+<!-- Progress -->
+<script src="{% static './assets/js/jquery.barfiller.js' %}"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="{% static './assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static './assets/js/waypoints.min.js' %}"></script>
+<script src="{% static './assets/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static './assets/js/hover-direction-snake.min.js' %}"></script>
+
+<!-- contact js -->
+<script src="{% static './assets/js/contact.js' %}"></script>
+<script src="{% static './assets/js/jquery.form.js' %}"></script>
+<script src="{% static './assets/js/jquery.validate.min.js' %}"></script>
+<script src="{% static './assets/js/mail-script.js' %}"></script>
+<script src="{% static './assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="{% static './assets/js/plugins.js' %}"></script>
+<script src="{% static './assets/js/main.js' %}"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

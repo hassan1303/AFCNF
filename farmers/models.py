@@ -15,6 +15,13 @@ class Profile(models.Model):
     AGRIC_TYPE = [('Crop', 'Crop'), ('Livestock', 'Livestock'), ('Mixed', 'Mixed')]
     agriculture_type = models.CharField(max_length=10, choices=AGRIC_TYPE)
 
+    def __str__(self):
+        return self.user.username
+
+
+
+   
+
 class FarmDetail(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     location = models.CharField(max_length=100)

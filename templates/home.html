@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <!--? slider Area Start-->
+        <section class="slider-area hero-overly">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-9 col-md-10 col-sm-9">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">Agricultural Footprint Calculator</h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">Welcome to AgriCalc. Use the menu above to get started.</p>
+                                    <a href="{% url 'home' %}" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Explore Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+   <!--? Services Area Start -->
+<section class="services-area pt-top border-bottom pb-20 mb-60">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+                <div class="section-tittle text-center mb-55">
+                    <span class="element">Our Project</span>
+                    <h2>Agricultural Footprint Calculator</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- User Management -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center">
+                    <div class="cat-icon">
+                        <i class="fas fa-users fa-3x"></i>
+                    </div>
+                    <div class="cat-cap">
+                        <h5>User Management</h5>
+                        <p>Farmers register, log in securely, manage their profiles, and access dashboards. Admins handle user roles and system updates.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Data Input System -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center">
+                    <div class="cat-icon">
+                        <i class="fas fa-keyboard fa-3x"></i>
+                    </div>
+                    <div class="cat-cap">
+                        <h5>Data Input System</h5>
+                        <p>Users input details on crops, livestock, water use, machinery, and farming methods to enable accurate sustainability analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footprint Analysis -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center">
+                    <div class="cat-icon">
+                        <i class="fas fa-leaf fa-3x"></i>
+                    </div>
+                    <div class="cat-cap">
+                        <h5>Footprint & Sustainability</h5>
+                        <p>Calculates carbon, water, and soil impact using emission factors, providing sustainability scores and tailored improvement tips.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Dashboard & Visualization -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center">
+                    <div class="cat-icon">
+                        <i class="fas fa-chart-line fa-3x"></i>
+                    </div>
+                    <div class="cat-cap">
+                        <h5>Dashboard & Visuals</h5>
+                        <p>Interactive charts and downloadable reports in PDF/Excel help users understand and manage their farm's environmental impact.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Alerts & Notifications -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center">
+                    <div class="cat-icon">
+                        <i class="fas fa-bell fa-3x"></i>
+                    </div>
+                    <div class="cat-cap">
+                        <h5>Alerts & Reminders</h5>
+                        <p>Smart notifications for excessive resource use, data errors, and timely updates based on farming activities and best practices.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Admin Panel & Security -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-cat text-center">
+                    <div class="cat-icon">
+                        <i class="fas fa-user-shield fa-3x"></i>
+                    </div>
+                    <div class="cat-cap">
+                        <h5>Admin & Security</h5>
+                        <p>Admins manage the platform centrally with secure session handling and system maintenance for reliability and data protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+{% endblock content %}
